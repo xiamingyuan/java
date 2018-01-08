@@ -1,0 +1,123 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0"
+         metadata-complete="false">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/HelloWorld</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HelloForm</servlet-name>
+    <servlet-class>HelloForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloForm</servlet-name>
+    <url-pattern>/HelloForm</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CheckBox</servlet-name>
+    <servlet-class>CheckBox</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckBox</servlet-name>
+    <url-pattern>/CheckBox</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <!-- 类名 -->
+    <servlet-name>DisplayHeader</servlet-name>
+    <!-- 所在的包 -->
+    <servlet-class>DisplayHeader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayHeader</servlet-name>
+    <!-- 访问的网址 -->
+    <url-pattern>/DisplayHeader</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <!-- 类名 -->
+    <servlet-name>Refresh</servlet-name>
+    <!-- 所在的包 -->
+    <servlet-class>Refresh</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Refresh</servlet-name>
+    <!-- 访问的网址 -->
+    <url-pattern>/Refresh</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <!-- 类名 -->
+    <servlet-name>SessionTrack</servlet-name>
+    <!-- 所在的包 -->
+    <servlet-class>SessionTrack</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTrack</servlet-name>
+    <!-- 访问的网址 -->
+    <url-pattern>/SessionTrack</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <display-name>UploadServlet</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>UploadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CurrentDate</servlet-name>
+    <servlet-class>CurrentDate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CurrentDate</servlet-name>
+    <url-pattern>/CurrentDate</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SendEmail</servlet-name>
+    <servlet-class>SendEmail</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SendEmail</servlet-name>
+    <url-pattern>/SendEmail</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ErrorHandler</servlet-name>
+    <servlet-class>ErrorHandler</servlet-class>
+  </servlet>
+  <!-- servlet mappings -->
+  <servlet-mapping>
+    <servlet-name>ErrorHandler</servlet-name>
+    <url-pattern>/ErrorHandler</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorHandler</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type >
+    <location>/ErrorHandler</location>
+  </error-page>
+</web-app>
+
